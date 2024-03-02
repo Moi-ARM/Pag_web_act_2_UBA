@@ -134,6 +134,7 @@ function UpdateData(index) {
     }
 }
 
+//función para botón de limpiar datos
 function EmptyData() {
     document.getElementById("name").value = "";
     document.getElementById("lastname").value = "";
