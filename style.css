@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    
+    background: linear-gradient(black, white);
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(153, 153, 153); */
+}
+
+header h1{
+    color: white;
+    font-size: 30px;
+    font-family: "Young Serif", serif;
+    text-align: center;
+    margin-left: auto;
+    text-shadow: 1px 2px 3px blue;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border: 1px solid white;
+}
+
+article{
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+}
+
+article div.contenedor-descripcion{
+    padding: 10px;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+}
+
+article p{
+    margin: 10px;
+}
+
+.contenedor-formulario{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form div{
+    margin-top: 20px;
+}
+
+div.botones{
+    grid-column: 1/3;
+}
+
+div.botones a{
+    display: inline;
+}
+
+div.botones button.boton-enviar{
+    display: inline;
+}
+
+.contenedor-formulario h1{
+    font-size: 22px;
+    font-family: "Young Serif", serif;
+}
+
+form input{
+    width: 70%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+}
+
+form input:focus{
+    background-color: lightblue;
+    transition: all 0.2s ease;
+}
+
+form label {
+    letter-spacing: 1px;
+    text-shadow: 0.5px 1px 2px black;
+}
+
+form div.botones .boton-limpiar{
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;   
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+form div.botones .boton-limpiar:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    transition: all 0.2s ease;
+}
+
+form div.botones .boton-limpiar:active{
+    background-color: red;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+form div button.boton-enviar{
+    font-family: 15px;
+    padding: 5px;
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+    background-color: lime;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+button.boton-enviar:hover{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    transition: all 0.2s ease;
+}
+
+button.boton-enviar:active{
+    background-color: lime;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+#edit{
+    display: none;
+}
+
+table#crud-table{
+    margin-bottom: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: left;
+    padding: 8px;
+}
+
+thead{
+    background-color: black;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(43, 86, 226);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(225, 225, 225);
+    border: 1px solid black;
+}
+
+.btn-tabla-borrar{
+    background-color: red;
+    padding: 3px;
+    text-decoration: none;   
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-tabla-borrar:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    transition: all 0.2s ease;
+}
+
+.btn-tabla-borrar:active{
+    background-color: red;
+    border: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.btn-tabla-Actualizar{
+    margin: 2px;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #2986cc;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.btn-tabla-Actualizar:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.btn-tabla-Actualizar:active{
+    background-color: #2986cc;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.boton-actualizar{
+    cursor: pointer;
+    background-color: #2986cc;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: white;
+}
+
+.boton-actualizar:hover{
+    background-color: white;
+    color: blue;
+    transition: all 0.2s ease;
+}
+
+.boton-actualizar:active{
+    background-color: #2986cc;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.contenedor-imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contenedor-imagenes h3{
+    font-family: "Young Serif", serif;
+    letter-spacing: 1px;
+}
+
+.contenedor-imagenes img{
+    width: 100px;
+    height: 100px;
+}
